@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Kirana Inventory</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Mauli Traders</h1>
+
+        <input type="text" id="name" placeholder="Product Name">
+        <input type="number" id="qty" placeholder="Qty (kg)">
+        <input type="number" id="wholesale" placeholder="Wholesale Rate/kg">
+        <input type="number" id="sell" placeholder="Sell Rate/kg">
+        <button onclick="addOrUpdateItem()">Save Item</button>
+
+        <br>
+        <input type="text" id="search" placeholder="Search product..." onkeyup="render()">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Per (kg)</th>
+                    <th>Wholesale</th>
+                    <th>Sell</th>
+                    <th>Profit/kg</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
